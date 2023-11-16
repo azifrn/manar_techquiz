@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generation(x,y){
+            let gen = {
+                "m":["great grandfather","grandfather","father","me!","son","grandson","great grandson"],
+                "f":["great grandmother","grandmother","mother","me!","daughter","granddaughter","great granddaughter"]
+            }
+
+            return console.log(gen[y][x+3]);
+        }
+
+        generation(2,"f");
+        generation(-3,"m");
+        generation(1, "f");
+    </script>
+</body>
+
+</html>

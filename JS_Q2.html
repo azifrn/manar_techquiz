@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+       function error(code){
+
+        let errors = {
+            1:"Check the fan: e1",
+            2:"Emergency stop: e2",
+            3: "Pump Error: e3",
+            4: "c: e4",
+            5: "Temperature Sensor Error: e5"
+        }
+
+        try{
+
+            if(errors[code] === undefined){
+                throw '101';
+            }
+
+            throw errors[code];
+
+        }catch(err){
+        
+            return console.log(err);
+        }
+       }
+
+       error(1);
+       error(2);
+       error(3);
+    </script>
+</body>
+
+</html>

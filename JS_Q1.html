@@ -1,0 +1,20 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let string = "Breakfast at 09:00 in the room 123:456.";
+        const reg = /[0-9]{2}:[0-9]{2}(?!\d)/g
+        
+        console.log(string.match(reg));
+
+    </script>
+</body>
+
+</html>
